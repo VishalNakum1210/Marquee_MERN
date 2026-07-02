@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      tr,
+      td,
+      th {
+        border: 1px solid;
+      }
+      td {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Sport Physical Form</h1>
+      <form action="/list/actionForm.html" method="get">
+        <fieldset>
+          <legend><h4>Athelet Information</h4></legend>
+          <ul>
+            <li>
+              <label for="name"><b>Name</b></label>
+              <input type="text" name="Username" id="name" />
+            </li>
+            <li>
+              <label for="name"><b>Schoole/Teams</b></label>
+              <input type="text" name="Username" id="name" />
+            </li>
+            <li>
+              <label for="Sport"><b>Sport</b></label>
+              <input type="text" name="sport" id="sport" />
+            </li>
+            <li>
+              <label for="parent"><b>Parent/Gaurdian Name:</b></label>
+              <input type="text" name="Parent/Gaurdian Name" id="parent" />
+            </li>
+            <li>
+              <label for="contact"><b>Contact Numbe</b>r</label>
+              <input type="text" name="Contact Number" id="contact" />
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend><h4>Medical History for Athelete</h4></legend>
+          <ul>
+            <li>
+              <b>History of concussion:</b>
+              <input
+                type="radio"
+                name="concussion"
+                id="concussionYes"
+                value="concussionYes"
+              /><label for="concussionYes">Yes</label>
+              <input
+                type="radio"
+                name="concussion"
+                id="concussionNo"
+                value="concussionNo"
+              /><label for="concussionNo">No</label>
+            </li>
+
+            <li>
+              <label for="Surgery"><b>Previous Surgery</b></label>
+              <input type="text" name="Surgery" id="Surgery" />
+            </li>
+            <li>
+              <b>Any bond Fracture?</b>
+              <input
+                type="radio"
+                name="fracture"
+                id="fractureYes"
+                value="fractureYes"
+              /><label for="fractureYes">Yes</label>
+              <input
+                type="radio"
+                name="fracture"
+                id="fractureNo"
+                value="fractureNo"
+              /><label for="fractureNo">No</label>
+            </li>
+            <li>
+              <b>Asthma or breathing probleam?</b>
+              <input
+                type="radio"
+                name="probleam"
+                id="probleamYes"
+                value="probleamYes"
+              /><label for="probleamYes">Yes</label>
+              <input
+                type="radio"
+                name="probleam"
+                id="probleamNo"
+                value="probleamNo"
+              /><label for="probleamNo">No</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>
+            <h4>Doctors Recommendation for sport participation</h4>
+          </legend>
+          <table style="border: 2px solid">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Pass</th>
+                <th>Fail</th>
+                <th>Comments</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cardiovascula</td>
+                <td>
+                  <input type="radio" name="Cardiovascula" id="Cardiovascula" />
+                </td>
+                <td>
+                  <input type="radio" name="Cardiovascula" id="Cardiovascula" />
+                </td>
+                <td>
+                  <input type="text" />
+                </td>
+              </tr>
+
+              <tr>
+                <td>Flexibility</td>
+                <td>
+                  <input type="radio" name="Cardiovascula" id="Cardiovascula" />
+                </td>
+                <td>
+                  <input type="radio" name="Cardiovascula" id="Cardiovascula" />
+                </td>
+                <td>
+                  <input type="text" />
+                </td>
+              </tr>
+
+              <tr>
+                <td>Strength</td>
+                <td>
+                  <input type="radio" name="Cardiovascula" id="Cardiovascula" />
+                </td>
+                <td>
+                  <input type="radio" name="Cardiovascula" id="Cardiovascula" />
+                </td>
+                <td>
+                  <input type="text" />
+                </td>
+              </tr>
+
+              <tr>
+                <td>Cardiovascula</td>
+                <td>
+                  <input type="radio" name="Cardiovascula" id="Cardiovascula" />
+                </td>
+                <td>
+                  <input type="radio" name="Cardiovascula" id="Cardiovascula" />
+                </td>
+                <td>
+                  <input type="text" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>
+            <h4>Department</h4>
+          </legend>
+          <select name="Department" id="Department">
+            <option value="null">Select Department</option>
+            <option value="CSE">CSE</option>
+            <option value="AIML">AIML</option>
+            <option value="AIDS">AIDS</option>
+            <option value="cyber">cyber</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <h4>Your Course</h4>
+          </legend>
+          <label for="CourseJava">JAVA</label>
+          <input
+            type="checkbox"
+            name="CourseJava"
+            id="CourseJava"
+            value="JAVA"
+          />
+          <label for="CourseHTML">HTML</label>
+          <input
+            type="checkbox"
+            name="CourseHTML"
+            id="CourseHTML"
+            value="HTML"
+          /><label for="CourseCSS">CSS</label>
+          <input
+            type="checkbox"
+            name="CourseCSS"
+            id="CourseCSS"
+            value="CSS"
+          /><label for="CourseFlutter">FLUTTER</label>
+          <input
+            type="checkbox"
+            name="CourseFlutter"
+            id="CourseFlutter"
+            value="FLUTTER"
+          />
+        </fieldset>
+        <fieldset>
+          <legend>
+            <h4>Address</h4>
+          </legend>
+          <textarea
+            type="textarea"
+            rows=""
+            cols=""
+            placeholder="Enter  Your Address"
+            name="address"
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>
+            <h4>Email</h4>
+          </legend>
+          <input type="email" name="email" />
+        </fieldset>
+        <fieldset>
+          <legend>
+            <h4>Phone Number</h4>
+          </legend>
+          <input type="number" name="number" />
+        </fieldset>
+        <fieldset>
+          <legend>
+            <h4>Password</h4>
+          </legend>
+          <input type="password" name="password" />
+        </fieldset>
+        <fieldset>
+          <legend>
+            <h4>Date</h4>
+          </legend>
+          <input type="date" name="date" />
+        </fieldset>
+        <fieldset>
+          <legend>
+            <h4>Time</h4>
+          </legend>
+          <input type="time" name="time" />
+        </fieldset>
+        <fieldset>
+          <legend>
+            <h4>Date & Time</h4>
+          </legend>
+          <input type="datetime" name="datetime" />
+        </fieldset>
+        <fieldset>
+          <legend>
+            <h4>Aadhar Card</h4>
+          </legend>
+          <input type="file" accept=".jpg, .pdf" name="file_aadhar"/>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <h4>
+              
+              Resume Document
+            </h4>
+          </legend>
+          <label>Profile Image</label>
+          <input type="file" accept=".png, .jpeg, .jpg" /><br>
+          <label>
+            Resume
+          </label>
+          <input type="file" accept=".pdf" size="10kb"/><br>
+          <label>
+            Word file
+          </label>
+          <input type="file" accept=".docx"/><br>
+          <label>
+            Excel File
+          </label>
+          <input type="file" accept=".xlxs"/><br>
+        </fieldset>
+
+
+        <button type="submit" value="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
