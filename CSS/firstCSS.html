@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="firstCSSsheet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .listElement {
+        color: chartreuse;
+        background-color: brown;
+        border: 2px solid;
+        margin: 10px;
+        padding: 10px;
+      }
+      p {
+        color: brown;
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid;
+        background-color: aqua;
+      }
+      ul {
+        background-color: aquamarine;
+        margin: 10px;
+        padding: 10px;
+      }
+      ul:hover {
+        background-color: black;
+      }
+      input[placeholder] {
+        color: aqua;
+        font-size: 20px;
+      }
+      input[name="Username"] {
+        background-color: red;
+      }
+      input[name="Password"] {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 id="heading">Types of CSS :</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsa vel
+      sapiente velit ea. Ipsa cupiditate, placeat minus laudantium vitae
+      molestiae, mollitia, in necessitatibus praesentium maiores itaque ipsam
+      assumenda quasi.
+    </p>
+    <ul>
+      <li
+        style="
+          color: chartreuse;
+          background-color: brown;
+          border: 2px solid;
+          margin: 10px;
+          padding: 10px;
+        "
+      >
+        Inline CSS
+      </li>
+      <li class="listElement">Internal CSS</li>
+      <li class="listElement">External CSS</li>
+    </ul>
+
+    <form>
+      <label for="Username">Username</label>
+      <input id="Username" name="Username" placeholder="Enter value here" />
+      <br />
+      <label for="Password">Password</label>
+      <input id="Password" name="Password" placeholder="Enter value here" />
+    </form>
+  </body>
+</html>
