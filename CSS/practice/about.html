@@ -7,7 +7,7 @@
     <!-- SEO (Search Engine Optimization) is the practice of improving your website’s content and structure to rank higher on search engines like Google -->
 
     <!-- Meta Data for SEO -START -->
-     <link rel="stylesheet" href="aboutStyle.css">
+    <link rel="stylesheet" href="aboutStyle.css" />
     <meta name="description" content="About us page-  Parul University" />
     <meta name="keywords" content="PU, vadodra , Parul University," />
     <meta name="author" content="contact@paruluniversity.ac.in" />
@@ -20,13 +20,32 @@
       type="image/x-icon"
     />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap');
-      *{
+      @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap");
+      * {
         font-family: "Lobster Two", sans-serif;
       }
       .centralized {
         text-align: center;
         color: black;
+      }
+      #navbar-top {
+        padding: 10px;
+        position: sticky;
+        top: 10px;
+        background-color: black;
+      }
+      nav {
+        display: flex;
+      }
+      .navLink{
+        padding: 5px 10px;
+        color: wheat;
+      }
+      #chatboatImg {
+        position: fixed;    
+        bottom: 10px;
+        right: 10px;
+        border-radius: 50%;
       }
     </style>
   </head>
@@ -35,11 +54,11 @@
 
     <header id="navbar-top">
       <nav>
-        <a href="#sub-heading-1">1. Topics</a> <br />
-        <a href="#sub-heading-2">2. Topics</a> <br />
-        <a href="#sub-heading-3">3. Topics</a> <br />
-        <a href="#sub-heading-4">4. Topics</a> <br />
-        <a href="#sub-heading-5">5. Topics</a> <br />
+        <a class="navLink" href="#sub-heading-1">1. Topics</a> <br />
+        <a class="navLink" href="#sub-heading-2">2. Topics</a> <br />
+        <a class="navLink" href="#sub-heading-3">3. Topics</a> <br />
+        <a class="navLink" href="#sub-heading-4">4. Topics</a> <br />
+        <a class="navLink" href="#sub-heading-5">5. Topics</a> <br />
       </nav>
     </header>
 
@@ -257,6 +276,12 @@
           </p>
         </div>
       </div>
+      <img
+        id="chatboatImg"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_XxqALHPYll8bvJRjpob__AGnIqVDJwa-lqdaamoQcA&s=10"
+        height="80px"
+        width="80px"
+      />
     </main>
 
     <footer></footer>
