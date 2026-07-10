@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #cardBox {
+        min-width: 100vh;
+        height: 400px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: space-evenly;
+        gap: 30px;
+      }
+      .AllCard {
+        box-shadow: 0 5px 20px #000000;
+        box-sizing: border-box;
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        height: 350px;
+        width: 350px;
+        gap: 10px;
+      }
+      #card2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 4px solid gray;
+        padding: 20px;
+        margin: 30px;
+      }
+      #innerCard{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      }
+      .innerSubClass{
+        width: 230px;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      i{
+        font-size: 70px;
+        color: gray;
+      }
+      .colorText{
+        color: orangered;
+      }
+      .orangeDivider{
+        width: 100px;
+        height: 5px;
+        border-radius: 10px;
+        background-color: orangered;
+        margin-left: 50px;
+        margin-top: 10px;
+      }
+      .betweenDivider{
+        height: 150px;
+        width: 3px;
+        background-color: gray;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="cardBox">
+      <section class="AllCard">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAgeNVIM2__eMFkxI1Nh-MRL554cEiDPLaZa6r2YWtYA&s=10"
+          height="200px"
+        />
+        <h3>Kitchen Remmodels</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+          pariatur cum tempora? Dolores amet unde repudiandae harum, id porro
+          obcaecati.
+        </p>
+      </section>
+      <section class="AllCard">
+        <img
+          src="https://as1.ftcdn.net/jpg/03/71/56/80/1000_F_371568088_hr4jIxEKpVcZRRVx3XBd8nH5Ujcjbfu8.jpg"
+          height="200px"
+        />
+        <h3>Windows & Doors</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+          pariatur cum tempora? Dolores amet unde repudiandae harum, id porro
+          obcaecati.
+        </p>
+      </section>
+      <section class="AllCard">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM9Zj7gBQKdLT2B5FfdcwMivN8SSxsincYTgmz6MG6MMbAPowxLveLu_0D&s=10"
+          height="200px"
+        />
+        <h3>Desks & Porches</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+          pariatur cum tempora? Dolores amet unde repudiandae harum, id porro
+          obcaecati.
+        </p>
+      </section>
+    </section>
+
+    <section id="card2">
+      <section>
+        <h1 style="color: gray;">Why Choose Us</h1>
+        <div class="orangeDivider"></div>
+      </section>
+      <section id="innerCard">
+        <section class="innerSubClass">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="colorText">We have</p>
+          <h1 class="colorText">1</h1>
+          <p>Central Location in</p>
+        </section>
+
+        <div class="betweenDivider"></div>
+
+        <section class="innerSubClass">
+          <i class="fa-regular fa-comments"></i>
+          <p class="colorText">Over</p>
+          <h1 class="colorText">95%</h1>
+          <p>Of student would</p>
+        </section>
+
+        <div class="betweenDivider"></div>
+
+        <section class="innerSubClass">
+          <i class="fa-solid fa-award"></i>
+          <p class="colorText">We have</p>
+          <h1 class="colorText">100%</h1>
+          <p>Accredted by the</p>
+        </section>
+
+        <div class="betweenDivider"></div>
+
+        <section class="innerSubClass">
+          <i class="fa-regular fa-thumbs-up"></i>
+          <p class="colorText">We have a</p>
+          <h1 class="colorText">95%</h1>
+          <p>Exam Pass Rate for</p>
+        </section>
+      </section>
+    </section>
+  </body>
+</html>
