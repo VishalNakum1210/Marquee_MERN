@@ -28,7 +28,7 @@
       }
       .AllCard {
         box-shadow: 0 5px 20px #000000;
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
         display: flex;
         padding: 10px;
         flex-direction: column;
@@ -37,36 +37,50 @@
         width: 350px;
         gap: 10px;
       }
-      #card2{
+      #card2 {
         display: flex;
         flex-direction: column;
         align-items: center;
         border: 4px solid gray;
         padding: 20px;
         margin: 30px;
+        overflow: hidden;
       }
-      #innerCard{
+      #innerCard {
         margin-top: 30px;
         display: flex;
         align-items: center;
         gap: 30px;
       }
-      .innerSubClass{
+      .innerSubClass {
         width: 230px;
         padding: 20px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
       }
-      i{
+      .AllCard:hover {
+        padding: 40px;
+        animation: myAnimation;
+        animation-duration: .2s;
+      }
+      @keyframes myAnimation {
+        from {
+          padding: 10px;
+        }
+        to {
+          padding: 40px;
+        }
+      }
+      i {
         font-size: 70px;
         color: gray;
       }
-      .colorText{
+      .colorText {
         color: orangered;
       }
-      .orangeDivider{
+      .orangeDivider {
         width: 100px;
         height: 5px;
         border-radius: 10px;
@@ -74,11 +88,17 @@
         margin-left: 50px;
         margin-top: 10px;
       }
-      .betweenDivider{
-        height: 150px;
+      .betweenDivider {
+        height: 200px;
         width: 3px;
         background-color: gray;
         border-radius: 10px;
+      }
+      p[class="colorText"] {
+        font-size: 30px;
+      }
+      section[class="innerSubClass"] > p {
+        text-align: center;
       }
     </style>
   </head>
@@ -124,7 +144,7 @@
 
     <section id="card2">
       <section>
-        <h1 style="color: gray;">Why Choose Us</h1>
+        <h1 style="color: gray">Why Choose Us</h1>
         <div class="orangeDivider"></div>
       </section>
       <section id="innerCard">
@@ -132,7 +152,7 @@
           <i class="fa-solid fa-location-dot"></i>
           <p class="colorText">We have</p>
           <h1 class="colorText">1</h1>
-          <p>Central Location in</p>
+          <p>Central Locations in London and Dubin</p>
         </section>
 
         <div class="betweenDivider"></div>
@@ -141,7 +161,7 @@
           <i class="fa-regular fa-comments"></i>
           <p class="colorText">Over</p>
           <h1 class="colorText">95%</h1>
-          <p>Of student would</p>
+          <p>Of student would recommand us to a friend</p>
         </section>
 
         <div class="betweenDivider"></div>
@@ -150,7 +170,7 @@
           <i class="fa-solid fa-award"></i>
           <p class="colorText">We have</p>
           <h1 class="colorText">100%</h1>
-          <p>Accredted by the</p>
+          <p>Accredted by the British counil and ACELS</p>
         </section>
 
         <div class="betweenDivider"></div>
@@ -159,7 +179,7 @@
           <i class="fa-regular fa-thumbs-up"></i>
           <p class="colorText">We have a</p>
           <h1 class="colorText">95%</h1>
-          <p>Exam Pass Rate for</p>
+          <p>Exam Pass Rate for our Students</p>
         </section>
       </section>
     </section>
