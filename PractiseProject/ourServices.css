@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    gap: 20px;
+    background-color: rgb(177, 177, 177);
+    margin-top: 40px;
+}
+.MainContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.subCard{
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    width: 350px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: white;
+}
+.subCard>section>i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 1px 1px 3px black;
+    height: 60px;
+    width: 60px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.subCard:hover .content>h3{
+    color: red;
+}
+.subCard:hover .iconBG{
+    color: white;
+    background-color: red;
+}
