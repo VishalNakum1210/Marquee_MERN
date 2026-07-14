@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --inter-font : "Inter", sans-serif;
+}
+header{
+    /* background-color: aqua; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+body{
+    min-height: 100vh;
+    margin-left: 150px;
+}
+#header1{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    margin-right: 230px;
+}
+#ButtonHeader{
+    display: flex;
+    gap: 15px;
+}
+#flipcart-button{
+    display: flex;
+    align-items: center;
+    gap: 5px;   
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    padding-right: 35px;
+    height: 43px;
+}
+#LocationHeader{
+    display: flex;
+    gap: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: var(--inter-font);
+    margin-top: 10px;
+}
+#LocationHeader>p>span{
+    color: #417FED;
+}
+#header2{
+    margin-left: 20px;
+}
+#headerInput{
+    height: 40px;
+    width: 65%;
+    border: 2px solid #417FED;
+    border-radius: 10px;
+}
