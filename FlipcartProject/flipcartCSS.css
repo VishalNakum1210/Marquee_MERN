@@ -7,15 +7,14 @@
     --inter-font : "Inter", sans-serif;
 }
 header{
-    /* background-color: aqua; */
-    padding: 10px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 body{
     min-height: 100vh;
     margin-left: 150px;
+    font-family: var(--inter-font);
 }
 #header1{
     display: flex;
@@ -50,11 +49,89 @@ body{
     color: #417FED;
 }
 #header2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-left: 20px;
+    margin-right: 180px;
 }
-#headerInput{
+#headerInputCover{
     height: 40px;
-    width: 65%;
+    width: 75%;
     border: 2px solid #417FED;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+}
+#headerInputCover>i{
+    font-size: 23px;
+    color: gray;
+    margin-left: 10px;
+}
+#HeaderInput{
+    height: 40px;
+    width: 95%;
+    border: none;
+    font-family: var(--inter-font);
+    font-size: 15px;
+    outline: none;
+}
+input:focus{
+    border: none;
+}
+.CenterCSS{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+#Header2CartButton{
+    border: none;
+    background-color: white;
+    color: #7C7B7E;
+    gap: 20px;
+}
+#UserShortCut{
+    font-size: 15px;
+    color: #7C7B7E;
+}
+.DividerInHader{
+    height: 0.5px;
+    width: 88%;
+    background-color: gray;
+}
+.haeder3{
+    margin-left: 10px;
+    display: flex;
+    max-width: 88%;
+    /* flex-wrap: wrap; */
+    overflow-x: scroll;
+}
+.innerCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    min-width: 80px;
+    max-height: 60px;
+}
+.innerCard>img{
+    height: 30px;
+    width: 35px;
+    padding: 5px;
+}
+.TruncateName{
+    max-width: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+.Login:hover .selectedImg{
+    transform: rotate(180deg);
+}
+img{
+    transition: transform 0.3s;
 }
