@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --inter-font : "Inter", sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+body{
+    min-height: 100vh;
+    margin-left: 150px;
+    font-family: var(--inter-font);
+}
+#header1{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    margin-right: 230px;
+}
+#ButtonHeader{
+    display: flex;
+    gap: 15px;
+}
+#flipcart-button{
+    display: flex;
+    align-items: center;
+    gap: 5px;   
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    padding-right: 35px;
+    height: 43px;
+}
+#LocationHeader{
+    display: flex;
+    gap: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: var(--inter-font);
+    margin-top: 10px;
+}
+#LocationHeader>p>span{
+    color: #417FED;
+}
+#header2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 180px;
+}
+#headerInputCover{
+    height: 40px;
+    width: 75%;
+    border: 2px solid #417FED;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+}
+#headerInputCover>i{
+    font-size: 23px;
+    color: gray;
+    margin-left: 10px;
+}
+#HeaderInput{
+    height: 40px;
+    width: 95%;
+    border: none;
+    font-family: var(--inter-font);
+    font-size: 15px;
+    outline: none;
+}
+input:focus{
+    border: none;
+}
+.CenterCSS{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+#Header2CartButton{
+    border: none;
+    background-color: white;
+    color: #7C7B7E;
+    gap: 20px;
+}
+#UserShortCut{
+    font-size: 15px;
+    color: #7C7B7E;
+}
+.DividerInHader{
+    height: 0.5px;
+    width: 88%;
+    background-color: gray;
+}
+.haeder3{
+    margin-left: 10px;
+    display: flex;
+    max-width: 88%;
+    /* flex-wrap: wrap; */
+    overflow-x: scroll;
+}
+.innerCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    min-width: 80px;
+    max-height: 60px;
+}
+.innerCard>img{
+    height: 30px;
+    width: 35px;
+    padding: 5px;
+}
+.TruncateName{
+    max-width: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+.Login:hover .selectedImg{
+    transform: rotate(180deg);
+}
+img{
+    transition: transform 0.3s;
+}
