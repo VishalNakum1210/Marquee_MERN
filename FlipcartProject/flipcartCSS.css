@@ -10,11 +10,15 @@ header{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    margin-left: 150px;
 }
 body{
     min-height: 100vh;
-    margin-left: 150px;
     font-family: var(--inter-font);
+}
+main{
+    margin-left: 150px;
+
 }
 #header1{
     display: flex;
@@ -134,4 +138,181 @@ input:focus{
 }
 img{
     transition: transform 0.3s;
+}
+
+.Offer{
+    width: 88%;
+}
+.Offer>img{
+    width: 100%;
+}
+
+.adSlider{
+    margin-top: 20px;
+    display: flex;
+    width: 88%;
+    gap: 20px;
+    overflow: hidden;
+    height: 250px;
+    /* background-color: red; */
+}
+.adPic>img{
+    height: 100%;
+    border-radius: 20px;
+}
+ #adPic1{
+    flex-grow: 2;
+ }
+ #adPic2{
+    flex-grow: 2;
+ }
+ #adPic3{
+    flex-grow: 1;
+ }
+
+ .home-decor{
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #212121;
+    width: 88%;
+    padding: 10px;
+ }
+.home-decor-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+ .home-decor-header>h2{
+    color: white;
+ }
+ .home-decor-header>button>i{
+    font-size: 18px;
+ }
+ #Home-Decore-arrow-button{
+    height: 40px;
+    width: 60px;
+    border-radius: 30px;
+    border: none;
+ }
+ .home-decor-product{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+ }
+ .home-decor-product-card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 180px;
+    background-color: wheat;
+    border-radius: 20px;
+ }
+ .home-decor-product-card>section>img{
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+ }
+
+
+  .Looking-for{
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #85f6cc;
+    width: 88%;
+    padding: 10px;
+ }
+.Looking-for-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+ .Looking-for-header>h2{
+    color: white;   
+ }
+ .Looking-for-header>button>i{
+    font-size: 18px;
+ }
+ #Looking-fore-arrow-button{
+    height: 40px;
+    width: 60px;
+    border-radius: 30px;
+    border: none;
+ }
+ .Looking-for-product{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+ }
+ .Looking-for-product-card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    width: 180px;
+    background-color: wheat;
+    border-radius: 20px;
+ }
+ .Looking-for-product-card>section>img{
+    height: 150px;
+ }
+ .Looking-for-img{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+ }
+ .Brand-spotligth{
+    padding: 20px;
+ }
+ .Brand-spotligth-img-all{
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+ }
+.Brand-spotligth-img>img{
+    height: 250px;
+}
+.footer-header{
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    color: #212121;
+}
+.footer-content{
+    background-color: #212121;
+    height: 270px;
+    display: flex;
+}
+.footer-sub-content{
+    padding: 50px 50px;
+}
+.footer-sub-content>h3{
+    color: gray;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.footer-sub-content>p{
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+}
+.footerDivider{
+    height: 200px;
+    margin: 50px 0;
+    width: 1px;
+    background-color: gray;
+}
+.social-header{
+    margin-top: 30px;
+}
+.footer-sub-content>i{
+    margin-right: 10px;
+    color: white;
+    font-size: 20px;
 }

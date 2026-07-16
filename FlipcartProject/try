@@ -1,0 +1,77 @@
+## campus delivery Application
+
+	# Registration Requirement
+		student name
+		student enrollment number (PK)
+		student phone number
+		student hostel
+		student hostel room
+		password		
+
+	# Login
+		Student enrollment number
+		password
+
+	Users
+        230303124001
+            name
+            enrollment
+            phone
+            hostel
+            room
+            rating
+            totalCompleted
+            totalEarned
+            totalRequests
+            profileImage
+            isVerified
+
+DeliveryRequests
+    requestId1
+        requesterEnrollment
+        requesterName
+        hostel
+        room
+        orderType          // Blinkit, Zepto, Amazon...
+        reward
+        status             // Pending, Accepted, Picked, Delivered, Cancelled
+        deliveryMode       // DirectAccept / ApprovalRequired
+        acceptedBy
+        createdAt
+        otp
+        pickupLocation
+        notes
+
+    requestId2
+        ...
+
+DeliveryHistory
+    enrollment of user
+        historyId1
+            requestId
+            requesterEnrollment
+            deliveryEnrollment
+            reward
+            ratingByRequester
+            ratingByDeliveryBoy
+            completedAt
+
+AcceptedRequests
+    230303124010
+        requestId1
+            acceptedAt
+            status
+
+Ratings
+    230303124001
+        ratingId1
+            from
+            stars
+            review
+
+Wallet
+    230303124001
+        balance
+        totalEarned
+        totalWithdrawn
+        transactions
