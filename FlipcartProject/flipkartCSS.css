@@ -176,6 +176,7 @@ img{
     background-color: #212121;
     width: 88%;
     padding: 10px;
+    overflow: hidden;
  }
 .home-decor-header{
     display: flex;
@@ -246,6 +247,7 @@ img{
     padding: 20px;
     border-radius: 20px;
     background-color: white;
+    overflow: hidden;
  }
  .Looking-for-product-card{
     display: flex;
@@ -272,6 +274,7 @@ img{
     display: flex;
     gap: 30px;
     padding: 10px;
+    overflow: hidden;
  }
 .Brand-spotligth-img>img{
     height: 250px;
@@ -290,16 +293,16 @@ img{
     display: flex;
 }
 .footer-sub-content{
-    padding: 50px 50px;
+    padding: 35px 35px;
 }
 .footer-sub-content>h3{
     color: gray;
-    font-size: 13px;
+    font-size: 15px;
     margin-bottom: 10px;
 }
 .footer-sub-content>p{
     color: white;
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 700;
 }
 .footerDivider{
@@ -315,4 +318,31 @@ img{
     margin-right: 10px;
     color: white;
     font-size: 20px;
+}
+.brand-container{
+    margin-top: 10px;
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 88%;
+    gap: 10px;
+}
+.brand-sub-container{
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    min-width: 390px;
+    border-radius: 20px;
+}
+.brand-container-img{
+    height: 100%;
+    width: 100%;
+}
+.brand-container-context{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
